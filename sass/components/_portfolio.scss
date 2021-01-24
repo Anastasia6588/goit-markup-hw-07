@@ -28,17 +28,17 @@
 	transition-property: background-color, color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--light-text-color);
+		background-color: #2196f3;
+		outline: none;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
 }
 
 .filter-buttons__item:not(:last-child) {
 	margin-right: 8px;
-}
-
-.filter-buttons__text:hover,
-.filter-buttons__text:focus,
-.filter-buttons__text:active {
-	color: var(--light-text-color);
-	background-color: #2196f3;
-	outline: none;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }

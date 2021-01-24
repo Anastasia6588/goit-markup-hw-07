@@ -1,10 +1,10 @@
 .contacts-list {
 	display: flex;
 	margin-left: auto;
-}
 
-.contacts-list__item:not(:first-child) {
-	margin-left: 50px;
+	&__item:not(:first-child) {
+		margin-left: 50px;
+	}
 }
 
 .contacts-list__link {
@@ -21,12 +21,12 @@
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-	background-color: #fff;
-	color: var(--hover-color);
+	&:hover,
+	&:focus {
+		background-color: #fff;
+		color: var(--hover-color);
+	}
 }
 
 .contacts-list__icon {
@@ -37,9 +37,9 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-list__link:hover .contacts-list__icon,
-.contacts-list__link:focus .contacts-list__icon {
-	fill: var(--hover-color);
+	.contacts-list__link:hover &,
+	.contacts-list__link:focus & {
+		fill: var(--hover-color);
+	}
 }

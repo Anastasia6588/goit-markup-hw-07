@@ -20,10 +20,10 @@
 
 .directions__item {
 	position: relative;
-}
 
-.directions__item:not(:last-child) {
-	margin-right: 30px;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .directions__description {

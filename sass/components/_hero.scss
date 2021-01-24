@@ -8,17 +8,17 @@
 	padding-top: 200px;
 	padding-bottom: 200px;
 	margin: 0 auto;
-}
 
-.hero__title {
-	color: var(--light-text-color);
-	font-family: Roboto;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.363;
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+	&__title {
+		color: var(--light-text-color);
+		font-family: Roboto;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.363;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
 }
 
 .hero-btn-function {
